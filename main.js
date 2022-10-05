@@ -3,7 +3,7 @@ let url =`https://api.spacexdata.com/v3/capsules`;
 fetch(url).then((response) =>
     response.json().then((data) => {
         console.log(data);
-        let affichageFirstTableau = '<table class="table table-bordered"> <tr><th>Capsule Serial</th><th>Capsule ID</th><th>Status</th><th>Original launch</th><th>Original Launch Unix</th>';
+        let affichageFirstTableau = '<table class="table table-bordered table-striped"> <tr><th>Capsule Serial</th><th>Capsule ID</th><th>Status</th><th>Original launch</th><th>Original Launch Unix</th>';
        
         for (let capsule of data) {
 
@@ -25,7 +25,7 @@ function getLaunches (){
     fetch(url).then((response) =>
         response.json().then((data) => {
             console.log(data);
-            let showFirstTable = '<table class="table table-bordered"> <tr><th>Capsule Serial</th><th>Capsule ID</th><th>Status</th><th>Original launch</th><th>Original Launch Unix</th>';
+            let showFirstTable = '<table class="table table-bordered table-striped"> <tr><th>Capsule Serial</th><th>Capsule ID</th><th>Status</th><th>Original launch</th><th>Original Launch Unix</th>';
            
             for (let capsule of data) {
     
@@ -48,7 +48,7 @@ function getLaunches (){
         fetch(url).then((response) =>
             response.json().then((data) => {
                 console.log(data);
-                let showFirstTable = '<table class="table table-bordered"> <tr><th>Flight number</th><th>Mission name</th><th>Upcoming</th><th>Launch Year</th><th>Launch date utc</th>';
+                let showFirstTable = '<table class="table table-bordered table-striped"> <tr><th>Flight number</th><th>Mission name</th><th>Upcoming</th><th>Launch Year</th><th>Launch date utc</th>';
                
                 for (let capsule of data) {
         
@@ -64,5 +64,3 @@ function getLaunches (){
         }
     getLaunches();
     getCapsules(); 
-
-
