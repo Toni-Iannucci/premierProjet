@@ -1,6 +1,5 @@
 function getCapsules (){
 
-
 let url =`https://api.spacexdata.com/v3/capsules`;
 fetch(url).then((response) =>
     response.json().then((data) => {
@@ -19,6 +18,7 @@ fetch(url).then((response) =>
     })
 );  
 }
+
 function getLaunches (){
 
 
@@ -42,4 +42,3 @@ function getLaunches (){
     }
 getLaunches();
 getCapsules(); 
-    
