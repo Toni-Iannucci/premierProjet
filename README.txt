@@ -6,3 +6,6 @@ Create a view to see launches
 ###
 Create a a view to see capsules
 ###
+Dockerize the Web application
+####
+Open on: localhost:8080
